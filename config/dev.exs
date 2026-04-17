@@ -60,9 +60,6 @@ config :verkkotelakka_demo, VerkkotelakkaDemoWeb.Endpoint,
     ]
   ]
 
-# Enable dev routes for dashboard and mailbox
-config :verkkotelakka_demo, dev_routes: true
-
 # Do not include metadata nor timestamps in development logs
 config :logger, :default_formatter, format: "[$level] $message\n"
 

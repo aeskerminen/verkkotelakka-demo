@@ -59,8 +59,3 @@ config :live_table,
   app: :verkkotelakka_demo,
   repo: VerkkotelakkaDemo.Repo,
   pubsub: VerkkotelakkaDemo.PubSub
-
-config :verkkotelakka_demo, Oban,
-  repo: VerkkotelakkaDemo.Repo,
-  plugins: [Oban.Plugins.Pruner],
-  queues: [exports: 10]
