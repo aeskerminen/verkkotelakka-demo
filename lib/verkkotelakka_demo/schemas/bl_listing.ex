@@ -13,5 +13,4 @@ defmodule VerkkotelakkaDemo.Schemas.BlListing do
     field :review_status, :string
     field :reason, :string
   end
-
 end

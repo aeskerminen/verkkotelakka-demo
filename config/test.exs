@@ -6,7 +6,7 @@ import Config
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
 config :verkkotelakka_demo, VerkkotelakkaDemo.Repo,
-  database: Path.expand("../demo_data_test.db", __DIR__),
+  database: Path.expand("../test_data.db", __DIR__),
   pool_size: 5,
   pool: Ecto.Adapters.SQL.Sandbox
 

@@ -80,7 +80,7 @@ defmodule VerkkotelakkaDemoWeb do
   defp html_helpers do
     quote do
       use SutraUI
-        # Translation
+      # Translation
       use Gettext, backend: VerkkotelakkaDemoWeb.Gettext
 
       # HTML escaping functionality

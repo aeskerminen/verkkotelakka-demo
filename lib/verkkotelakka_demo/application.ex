@@ -12,7 +12,8 @@ defmodule VerkkotelakkaDemo.Application do
       VerkkotelakkaDemo.Repo,
       {Ecto.Migrator,
        repos: Application.fetch_env!(:verkkotelakka_demo, :ecto_repos), skip: skip_migrations?()},
-      {DNSCluster, query: Application.get_env(:verkkotelakka_demo, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:verkkotelakka_demo, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: VerkkotelakkaDemo.PubSub},
       # Start a worker by calling: VerkkotelakkaDemo.Worker.start_link(arg)
       # {VerkkotelakkaDemo.Worker, arg},

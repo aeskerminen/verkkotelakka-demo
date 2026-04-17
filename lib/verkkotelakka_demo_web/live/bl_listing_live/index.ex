@@ -7,7 +7,7 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
       id: %{
         label: "ID",
         sortable: true,
-        filterable: true,
+        filterable: true
       },
       list_entry: %{
         label: "List Entry",
