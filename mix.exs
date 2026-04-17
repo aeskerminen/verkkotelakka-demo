@@ -64,10 +64,10 @@ defmodule VerkkotelakkaDemo.MixProject do
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.26"},
-      {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.2.0"},
       {:bandit, "~> 1.5"},
       {:sutra_ui, "~> 0.3.0"},
+      {:jason, "~> 1.2"},
       {:igniter, "~> 0.1"},
       {:live_table, "~> 0.4.1"}
     ]
@@ -81,10 +81,6 @@ defmodule VerkkotelakkaDemo.MixProject do
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
     [
-      "compile",
-      "esbuild my_app --minify",
-      "tailwind my_app --minify",
-      "phx.digest",
       setup: ["deps.get", "ecto.setup", "assets.setup", "assets.build"],
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
@@ -92,6 +88,8 @@ defmodule VerkkotelakkaDemo.MixProject do
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
       "assets.build": ["compile", "tailwind verkkotelakka_demo", "esbuild verkkotelakka_demo"],
       "assets.deploy": [
+        "compile",
+        "esbuild verkkotelakka_demo --minify",
         "tailwind verkkotelakka_demo --minify",
         "esbuild verkkotelakka_demo --minify",
         "phx.digest"
