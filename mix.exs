@@ -83,7 +83,6 @@ defmodule VerkkotelakkaDemo.MixProject do
       "assets.build": ["compile", "tailwind verkkotelakka_demo", "esbuild verkkotelakka_demo"],
       "assets.deploy": [
         "compile",
-        "esbuild verkkotelakka_demo --minify",
         "tailwind verkkotelakka_demo --minify",
         "esbuild verkkotelakka_demo --minify",
         "phx.digest"

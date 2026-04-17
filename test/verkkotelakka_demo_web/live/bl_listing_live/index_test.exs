@@ -4,15 +4,7 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.IndexTest do
   import Phoenix.LiveViewTest
   import VerkkotelakkaDemo.BlListingFixtures
 
-  alias VerkkotelakkaDemo.Repo
-  alias VerkkotelakkaDemo.Schemas.BlListing
-
   describe "index" do
-    setup do
-      Repo.delete_all(BlListing)
-      :ok
-    end
-
     test "renders table and controls", %{conn: conn} do
       {:ok, view, _html} = live(conn, ~p"/")
 
