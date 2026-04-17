@@ -20,11 +20,6 @@ defmodule VerkkotelakkaDemoWeb.Router do
     live "/", Live.BlListingLive.Index, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", VerkkotelakkaDemoWeb do
-  #   pipe_through :api
-  # end
-
   # Enable LiveDashboard and Swoosh mailbox preview in development
   if Application.compile_env(:verkkotelakka_demo, :dev_routes) do
     # If you want to use the LiveDashboard in production, you should put
