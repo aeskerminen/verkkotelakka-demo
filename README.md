@@ -46,6 +46,9 @@ Tämä on suositeltu tapa pyörittää ohjelmaa, koska demo_data.db on populoitu
 ### Testaus
 
 ```
+mix deps.get
+```
+```
 mix test
 ```
 
