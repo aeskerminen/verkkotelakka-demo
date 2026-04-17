@@ -17,12 +17,6 @@ config :verkkotelakka_demo, VerkkotelakkaDemoWeb.Endpoint,
   secret_key_base: "DCZqG7y+6iKCuus5jpHLJOU6pnOLuDbrF7zKUIonDKgKv/bL9E8kwD6giwNsDvsG",
   server: false
 
-# In test we don't send emails
-config :verkkotelakka_demo, VerkkotelakkaDemo.Mailer, adapter: Swoosh.Adapters.Test
-
-# Disable swoosh api client as it is only required for production adapters
-config :swoosh, :api_client, false
-
 # Print only warnings and errors during test
 config :logger, level: :warning
 
