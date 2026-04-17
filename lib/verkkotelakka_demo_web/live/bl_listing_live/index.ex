@@ -19,7 +19,6 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
         label: "Readable Entry",
         sortable: true,
         filterable: true,
-        searchable: true
       },
       public_comment: %{
         label: "Public Comment",
