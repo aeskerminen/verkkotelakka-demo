@@ -23,12 +23,12 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
       },
       public_comment: %{
         label: "Public Comment",
-        sortable: false,
+        sortable: true,
         filterable: true
       },
       notes: %{
-        label: "Comment",
-        sortable: false,
+        label: "Notes",
+        sortable: true,
         filterable: true
       },
       created: %{
@@ -48,7 +48,7 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
       },
       public_review: %{
         label: "Public Review",
-        sortable: false,
+        sortable: true,
         filterable: true
       },
       review_status: %{
@@ -58,7 +58,7 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
       },
       reason: %{
         label: "Reason",
-        sortable: false,
+        sortable: true,
         filterable: true
       }
     ]
