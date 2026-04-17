@@ -1,3 +1,5 @@
+# Helper fixture for creating bl_listing entries for tests.
+
 defmodule VerkkotelakkaDemo.BlListingFixtures do
   alias VerkkotelakkaDemo.Repo
   alias VerkkotelakkaDemo.Schemas.BlListing

@@ -1,3 +1,5 @@
+# Contains tests for the BlListingLive.Index live view. Heavily depedent on the internals of the library, which is not optimal, but works for now.
+
 defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.IndexTest do
   use VerkkotelakkaDemoWeb.ConnCase, async: true
 

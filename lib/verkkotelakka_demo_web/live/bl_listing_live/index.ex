@@ -1,3 +1,5 @@
+# This file is responsible for defining the BlListingLive.Index table with fields and options. Filters is unused but can be implemented for e.g. date ranges.
+
 defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
   use VerkkotelakkaDemoWeb, :live_view
   use LiveTable.LiveResource, schema: VerkkotelakkaDemo.Schemas.BlListing
@@ -13,7 +15,7 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
         label: "List Entry",
         sortable: true,
         filterable: true,
-        searchable: true
+        searchable: true # Search is enabled for this field only (it contains the readable entry, so domain coverage for searches is guaranteed).
       },
       readable_entry: %{
         label: "Readable Entry",

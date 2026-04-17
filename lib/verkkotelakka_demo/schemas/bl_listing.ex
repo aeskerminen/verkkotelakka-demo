@@ -1,3 +1,5 @@
+# This is the SQLite schema for the bl_listing table.
+
 defmodule VerkkotelakkaDemo.Schemas.BlListing do
   use Ecto.Schema
 

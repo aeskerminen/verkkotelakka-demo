@@ -9,7 +9,7 @@ Ohjelmassa on testiympäristö, joka koostuu muutamasta yksinkertaisesta testist
 - Näkymässä tulee näkyä kaikki tietokannan kentät
 - Käyttäjä voi hakea tietokannasta rivejä domainin perusteella (ja hakutulokset ovat korrektit)
 
-Toiminnan oikeellisuutta vahvistaa myös lyhyet kommentit ja dokumentaatio, jota olen kirjoittanut tärkeisiin moduuleihin.
+Toiminnan oikeellisuutta vahvistaa myös lyhyet kommentit ja dokumentaatio, jota olen kirjoittanut tärkeisiin moduuleihin. Yksi isompi riski ohjelman toiminnallisuuten on testiympäristön riippuvuus LiveTablen sisäisistä IDistä, koska ne voivat muuttua tästä ohjelmistosta riippumatta ja rikkoa testiympäristön. 
 
 ## Mikä sai minut valitsemaan käyttämäni kielet ja kirjastot?
 
