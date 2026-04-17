@@ -2,6 +2,12 @@
    https://tailwindcss.com/docs/configuration */
 
 @import "tailwindcss" source(none);
+/* Sutra UI: Add source path for Tailwind to scan */
+@source "../../deps/sutra_ui/lib";
+
+/* Sutra UI: Import component styles */
+@import "../../deps/sutra_ui/priv/static/sutra_ui.css";
+
 @source "../css";
 @source "../js";
 @source "../../lib/verkkotelakka_demo_web";

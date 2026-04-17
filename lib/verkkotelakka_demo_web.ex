@@ -79,13 +79,13 @@ defmodule VerkkotelakkaDemoWeb do
 
   defp html_helpers do
     quote do
-      # Translation
+      use SutraUI
+        # Translation
       use Gettext, backend: VerkkotelakkaDemoWeb.Gettext
 
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components
-      import VerkkotelakkaDemoWeb.CoreComponents
 
       # Common modules used in templates
       alias Phoenix.LiveView.JS
