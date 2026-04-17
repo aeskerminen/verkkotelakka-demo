@@ -25,16 +25,23 @@ Ainoa lisäys valmiina oleviin riippuvuuksiin on LiveTable (ja sen riippuvuus Su
 
 ## Ympäristöt ja niiden käynnistäminen
 
+Ohjelmiston pyörittämiseen vaaditaan Elixir Phoenix ja mix, jotka voi asentaa Hexdocsin [aloitusoppaan](https://hexdocs.pm/phoenix/up_and_running.html) mukaisesti.
+
 ### Devaus
 
-demo_data.db on poikkeuksellisesti jätetty repoon, jotta ohjelmakoodin jakaminen muille on helpompaa.
+demo_data.db on poikkeuksellisesti jätetty repoon, jotta ohjelmakoodin jakaminen muille on helpompaa. Seuraavilla komennoilla saa ohjelman pyörimään kun ympäristö on asennettu:
 
+```
+mix deps.get
+```
 ```
 mix ecto.migrate
 ```
 ```
 mix phx.server
 ```
+
+Tämä on suositeltu tapa pyörittää ohjelmaa, koska demo_data.db on populoitu riveillä.
 
 ### Testaus
 

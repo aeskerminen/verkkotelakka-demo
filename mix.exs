@@ -63,7 +63,8 @@ defmodule VerkkotelakkaDemo.MixProject do
       {:bandit, "~> 1.5"},
       {:sutra_ui, "~> 0.3.0"},
       {:jason, "~> 1.2"},
-      {:live_table, "~> 0.4.1"}
+      {:live_table, "~> 0.4.1"},
+      {:igniter, "~> 0.7.9"}
     ]
   end
 
