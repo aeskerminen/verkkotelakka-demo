@@ -27,6 +27,8 @@ Ainoa lisäys valmiina oleviin riippuvuuksiin on LiveTable (ja sen riippuvuus Su
 
 ### Devaus
 
+demo_data.db on poikkeuksellisesti jätetty repoon, jotta ohjelmakoodin jakaminen muille on helpompaa.
+
 ```
 mix ecto.migrate
 ```
