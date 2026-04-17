@@ -22,7 +22,6 @@ config :verkkotelakka_demo, VerkkotelakkaDemoWeb.Endpoint,
   pubsub_server: VerkkotelakkaDemo.PubSub,
   live_view: [signing_salt: "VzYbgbqQ"]
 
-
 # Configure esbuild (the version is required)
 config :esbuild,
   version: "0.25.4",
@@ -60,7 +59,6 @@ config :live_table,
   app: :verkkotelakka_demo,
   repo: VerkkotelakkaDemo.Repo,
   pubsub: VerkkotelakkaDemo.PubSub
-
 
 config :verkkotelakka_demo, Oban,
   repo: VerkkotelakkaDemo.Repo,

@@ -7,17 +7,19 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
       id: %{
         label: "ID",
         sortable: true,
-        filterable: true
+        filterable: true,
       },
       list_entry: %{
         label: "List Entry",
         sortable: true,
-        filterable: true
+        filterable: true,
+        searchable: true
       },
       readable_entry: %{
         label: "Readable Entry",
         sortable: true,
-        filterable: true
+        filterable: true,
+        searchable: true
       },
       public_comment: %{
         label: "Public Comment",
@@ -63,7 +65,16 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.Index do
   end
 
   def filters do
-    [
-    ]
+    []
+  end
+
+  def table_options do
+    %{
+      search: %{
+        enabled: true,
+        debounce: 300,
+        placeholder: "Search..."
+      }
+    }
   end
 end
