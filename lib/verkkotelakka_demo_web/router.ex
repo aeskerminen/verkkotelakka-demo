@@ -17,7 +17,7 @@ defmodule VerkkotelakkaDemoWeb.Router do
   scope "/", VerkkotelakkaDemoWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", Live.BlListingLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
