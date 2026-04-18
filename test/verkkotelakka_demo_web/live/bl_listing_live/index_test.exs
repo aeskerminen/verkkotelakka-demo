@@ -17,8 +17,8 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.IndexTest do
     end
 
     test "filters rows using search", %{conn: conn} do
-      matching = bl_listing_fixture(%{list_entry: "match-token-001", readable_entry: "Read match"})
-      non_matching = bl_listing_fixture(%{list_entry: "other-token-002", readable_entry: "Read other"})
+      matching = bl_listing_fixture()
+      non_matching = bl_listing_fixture()
 
       assert matching.list_entry != non_matching.list_entry
 
@@ -36,7 +36,7 @@ defmodule VerkkotelakkaDemoWeb.Live.BlListingLive.IndexTest do
     end
 
     test "shows default empty result if query matches nothing", %{conn: conn} do
-      matching = bl_listing_fixture(%{list_entry: "visible-token-001"})
+      matching = bl_listing_fixture()
       non_matching_list_entry = "invisible-token-002"
 
       assert non_matching_list_entry != matching.list_entry
